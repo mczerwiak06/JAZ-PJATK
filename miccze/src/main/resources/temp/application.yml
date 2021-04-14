@@ -1,0 +1,33 @@
+my:
+  custom:
+    property: Hello from application properties
+    random: Hello from my custom random
+  random: ABCDEFG
+
+---
+spring:
+  config:
+    activate:
+      on-profile: jaz
+  main:
+    banner-mode: off
+my:
+  custom:
+    property: Hello from application properties JAZ
+
+---
+spring:
+  config:
+    activate:
+      on-profile: random
+my:
+  custom:
+    random: Hello from my custom random updated by application-random properties
+
+---
+spring:
+  config:
+    activate:
+      on-profile: valuechange
+some:
+  value: true
