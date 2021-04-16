@@ -27,7 +27,7 @@ public class MyConfigClass {
         return List.of("1", "2", "3");
     }
     @Bean
-    @ConditionalOnProperty(prefix ="some", name = "value")
+    @ConditionalOnProperty(prefix ="some", name = "value", havingValue = "true")
     public MyPojoClass myThirdPojoClass() {
         System.out.println("I was created on condition of existance of some.value = true.");
         return new MyPojoClass("some String value", 20);
