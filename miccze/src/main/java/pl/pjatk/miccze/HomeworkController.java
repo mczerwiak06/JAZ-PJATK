@@ -33,7 +33,7 @@ public class HomeworkController {
     }
 
     @DeleteMapping("/{model}")
-    public ResponseEntity<Void> deletyById(@PathVariable String model){
+    public ResponseEntity<Void> deletyByModel(@PathVariable String model){
         return ResponseEntity.ok().build();
     }
 }
