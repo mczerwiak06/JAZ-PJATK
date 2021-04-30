@@ -34,5 +34,4 @@ public class SampleController {
     public ResponseEntity<Car> createCar(@RequestBody Car car) {
         return ResponseEntity.ok(car);
     }
-
 }
